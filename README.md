@@ -1,2 +1,2 @@
-# iomfanzine.github.io
+# iomzine.github.io
 Web de [iom!]
