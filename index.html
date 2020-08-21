@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Fanzine sobre Pure Data en español" />
-    <meta name="author" content="Paola Sandoval e Isaac Medina" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <style>
+  body {
+    background-color: #e0f0f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    margin: 2% 10%;
+    min-height: 100px;
+  }
 
-    <title>iomfanzine</title>
+  h1  {color: #313536; font-size: 320%;}
 
-    <style>
-      body{background-color: #e0f0f4;}
-      h1  {color: #313536; font-size: 300%;}
-      p   {color: #313536; font-size: 100%;}
+  p   {color: #313536; font-size: 120%;}
 
-      #pborder{
-        border: 2px solid #313536;
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
+  a:link, a:visited {
+    position:relative;
+    /*display: block;*/
+    padding: 16px 32px;
+    cursor: pointer;
 
-  <body>
-    <h1 style="text-align:center;">[iom!]</h1>
-    <p style="text-align:center;">Fanzine dedicado al aprendizaje de Pure Data en español</p>
-    <p style="text-align:center;">Síguenos en:</p>
+    font-size: 120%;
+    text-align: center;
+    text-decoration: none;
+    color: #313536;
 
-    <p id="pborder">
-      <a href="https://www.instagram.com/iom.fanzine/">Instagram</a>
-    </p>
+    background-color: white;
+    border: 2px solid #313536;
+    border-radius: 4px;
+    box-shadow: 0 7px #999;
 
-    <p id="pborder">
-      <a href="https://www.facebook.com/iom.fanzine/">Facebook</a>
-    </p>
+    width: 90%;
+    margin: 10px; /*between links*/
+    transition-duration: 0.05s;
+  }
 
-    <p id="pborder">
-      <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/">YouTube</a>
-    </p>
+  a:hover{
+    background-color: #FFCCFF;
+    color: black;
+  }
 
-    <p id="pborder">
-      <a href="https://github.com/iomfanzine/">Github</a>
-    </p>
-  </body>
+  a:active{
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+</style>
+</head>
+
+<body>
+  <h1 style="text-align:center;">[iom!]</h1>
+  <p style="text-align:center;">fanzine dedicado al aprendizaje de pure data en español</p>
+  <p style="text-align:center;">síguenos en:</p>
+  <a href="https://www.instagram.com/iom.fanzine/" target="_blank">instagram</a>
+  <a href="https://www.facebook.com/iom.fanzine/" target="_blank">facebook</a>
+  <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" target="_blank">youtube</a>
+  <a href="https://github.com/iomfanzine/" target="_blank">github</a>
+</body>
 </html>
