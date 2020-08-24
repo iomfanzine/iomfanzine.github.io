@@ -3,14 +3,26 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+  .hero-image {
+    background-image:url("./assets/img/fondo-redes.jpg");
+    /*background-color: #cccccc;*/
+    width:100%;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
   body {
-    background-color: #e0f0f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*background-color: #e0f0f4;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
     /*justify-content: center;*/
-    margin: 2% 10%;
-    min-height: 100px;
+    /*margin: 2% 10%;*/
+    margin: -5%;
+    /*min-height: 100px;*/
   }
 
   img {
@@ -44,7 +56,7 @@
     transition-duration: 0.05s;
   }
 
-  a:hover{
+  /*a:hover{
     background-color: #FFCCFF;
     color: black;
   }
@@ -52,19 +64,20 @@
   a:active{
     box-shadow: 0 2px #666;
     transform: translateY(4px);
-  }
+  }*/
 
 </style>
 </head>
 
 <body>
-  <!--<h1 style="text-align:center;">[iom!]</h1>-->
-  <p><img src="./assets/img/logo-iom7.png" alt="iom" style="width:100%"></p>
-  <p style="text-align:center;">fanzine dedicado a Pure Data en español</p>
+  <div class="hero-image">
+      <p><img src="./assets/img/logo-iom7.png" alt="iom" style="width:95%"></p>
+  </div>
+  <!--<p style="text-align:center;">fanzine dedicado a Pure Data en español</p>
   <p style="text-align:center;">síguenos en:</p>
   <a href="https://www.instagram.com/iom.fanzine/" target="_blank">instagram</a>
   <a href="https://www.facebook.com/iom.fanzine/" target="_blank">facebook</a>
   <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" target="_blank">youtube</a>
-  <a href="https://github.com/iomfanzine/" target="_blank">github</a>
+  <a href="https://github.com/iomfanzine/" target="_blank">github</a>-->
 </body>
 </html>
