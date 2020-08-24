@@ -5,7 +5,6 @@
   <style>
   .hero-image {
     background-image:url("./assets/img/fondo-redes.jpg");
-    /*background-color: #cccccc;*/
     width:auto;
     height: 100%;
     background-attachment: fixed;
@@ -22,11 +21,17 @@
   }
 
   .img-link{
-    display:inline-block;
-    width:auto;
+    /*display:inline-block;*/
+    width:45%;
     /*padding: 10%;*/
-    margin: 0;
   }
+
+  .nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
   body {
     background-color: black;
@@ -39,11 +44,10 @@
     /*min-height: 100px;*/
   }
 
-
-  li {
+  .nav li {
     display: inline-block;
-    padding: 4%;
-}
+    padding: 20px;
+  }
 
   h1  {color: #313536; font-size: 320%;}
 
@@ -85,7 +89,7 @@
 <body>
   <div class="hero-image">
       <p><img class="img-header" src="./assets/img/logo-iom7.png" alt="iom-logo" style="width:95%"></p>
-      <ul>
+      <ul class="nav">
         <li>
           <a href="https://github.com/iomfanzine/" target="_blank">
           <img img class="img-link" src="./assets/img/logo-github.png" alt="iom-github" ></a>
@@ -96,7 +100,7 @@
         </li>
         <li>
           <a href="https://www.facebook.com/iom.fanzine/" target="_blank">
-          <img  src="./assets/img/logo-facebook.png" alt="iom-github" style="width:50px; height:50px"></a>
+          <img img class="img-link" src="./assets/img/logo-facebook.png" alt="iom-github"></a>
         </li>
       </ul>
   </div>
