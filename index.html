@@ -15,6 +15,19 @@
     position: absolute;
   }
 
+  .img-header{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-link{
+    display:inline-block;
+    width:auto;
+    /*padding: 10%;*/
+    margin: 0;
+  }
+
   body {
     background-color: black;
     /*display: flex;*/
@@ -26,36 +39,35 @@
     /*min-height: 100px;*/
   }
 
-  img {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+
+  li {
+    display: inline-block;
+    padding: 4%;
 }
 
   h1  {color: #313536; font-size: 320%;}
 
   p   {color: #313536; font-size: 120%;}
 
-  a:link, a:visited {
+  /*a:link, a:visited {
     position:relative;
-    /*display: block;*/
-    padding: 16px 32px;
+    /*display: block;
+    padding: 0%;
     cursor: pointer;
+    /*font-size: 120%;
+    /*text-align: center;
+    /*text-decoration: none;*/
+    /*color: #313536;*/
 
-    font-size: 120%;
-    text-align: center;
-    text-decoration: none;
-    color: #313536;
-
-    background-color: white;
-    border: 2px solid #313536;
+    /*background-color: white;*/
+    /*border: 2px solid #313536;
     border-radius: 4px;
-    box-shadow: 0 7px #999;
+    box-shadow: 0 7px #999;*/
 
-    width: 90%;
-    margin: 10px; /*between links*/
-    transition-duration: 0.05s;
-  }
+    /*width: 18%;
+    margin: 0px; /*between links*/
+    /*transition-duration: 0.05s;
+  }*/
 
   /*a:hover{
     background-color: #FFCCFF;
@@ -72,7 +84,21 @@
 
 <body>
   <div class="hero-image">
-      <p><img src="./assets/img/logo-iom7.png" alt="iom" style="width:95%"></p>
+      <p><img class="img-header" src="./assets/img/logo-iom7.png" alt="iom-logo" style="width:95%"></p>
+      <ul>
+        <li>
+          <a href="https://github.com/iomfanzine/" target="_blank">
+          <img img class="img-link" src="./assets/img/logo-github.png" alt="iom-github" ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" target="_blank">
+          <img img class="img-link" src="./assets/img/logo-youtube.png" alt="iom-github" ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/iom.fanzine/" target="_blank">
+          <img  src="./assets/img/logo-facebook.png" alt="iom-github" style="width:50px; height:50px"></a>
+        </li>
+      </ul>
   </div>
   <!--<p style="text-align:center;">fanzine dedicado a Pure Data en español</p>
   <p style="text-align:center;">síguenos en:</p>
