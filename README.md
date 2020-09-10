@@ -1,4 +1,4 @@
-# iomzine.github.io
+# iomfanzine.github.io
 Web de [iom!] fanzine v1.0
 
 La versión actual contiene ligas a nuestras redes en:
