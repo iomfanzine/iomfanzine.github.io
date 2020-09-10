@@ -7,7 +7,7 @@ La versión actual contiene ligas a nuestras redes en:
 *   YouTube
 *   Facebook
 
-Más elementos serán agregados en el futuro
+Más elementos serán agregados en el futuro :)
 
 ---
 
