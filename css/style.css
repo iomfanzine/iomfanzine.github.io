@@ -6,6 +6,35 @@
 	background-size: cover;
 }
 
+
+/* Se recomienda iniciar el estilo CSS para movil  despues agregar @media cuando la pantalla se vaya agrandando
+
+
+todo el estilo css primero:
+body{}
+p{}
+footer{}
+.clases{}
+etc etc.....
+
+y luego agregar
+
+
+@media only screen and (min-width: 720px){
+
+	body{}
+	p{}
+	etc etc...
+	cuando la pantalla sea mayor que 720px
+
+}
+
+
+
+En el media query escrito aqui solo dice que cuando la pantalla sea menor de 768px se despliegue la imagen fondo-baja.jpg como background, no estoy muy seguro si esa la intencion pero si es se recomienda usar png en lugar de jpg. PNG usualmente se usa para ilustraciones y texo, JPEG es para mostra fotografias. 
+
+*/
+
 @media only screen and (max-device-width: 768px) {
 	background: url("./assets/img/fondo-baja.jpg") center center no-repeat fixed cover;
 }

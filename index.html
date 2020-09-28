@@ -9,8 +9,19 @@
 </head>
 
 <body class="img-background">
-  <div>
+  <!-- Usar <header></header> tag en lugar de DIV, ayuda para posicionamiento, el tag <div> en realidad no contribuye nada, es utilizado solo para dar estilo junto con CSS. Se recomienda utiliar los tags adecuados y no sobre-utilizar ni <div> o <span>  -->
+  <div>   
+    
+    
+    
+    
+    <!--    tag <p> es innecesario en este contexto, <img> por si solo contiene atributos que ayudan dar estilo a la imagen, si tienes problemas con el estilo de la imagen, arregalrlo en CSS (html es solo para que el buscador pueda leer la informacion). si quieres hacer el logo "clickeable puedes hacer: <a href="index.xhtml"><img class="logo" src="./assets/images/logo-iom7.png" alt=""/></a>      -->
     <p><img class="img-header" src="./assets/images/logo-iom7.png" alt="iom-logo"></p>
+
+
+
+    <!-- trata de envolver la "unorderedList <ul> en un <nav> tag. de esta forma le dejas saber al buscador que es un menu de navegacion.  si es posible remplazar las imagenes de las redes sociales por "icons", fontawesome.com y otros sitios similares tienen unos muy buenos. esto es para no sobrecargar la pagina y que se muetre mas rapido en internet (tal vez ahora no haga mucho sentido pero cuando crezca en contenido sera muy util salvar espacio) -->
+
     <ul class="nav">
       <li>
         <a href="https://github.com/iomfanzine/" target="_blank">
@@ -27,5 +38,7 @@
     </ul>
   </div>
 </body>
+
+<!-- colocar <footer> tag  -->
 
 </html>
