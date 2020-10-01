@@ -1,26 +1,22 @@
+body {
+	background-color: black;
+	margin: 0%;
+}
+
 .img-background {
-	background-image: url("../assets/images/fondo-redes.jpg");
+	background-image: url("../assets/images/fondo-baja.jpg");
 	background-position: center center;  
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 768px) {
-	background: url("./assets/img/fondo-baja.jpg") center center no-repeat fixed cover;
-}
-
 .img-header {
 	display: block;
+        margin-top: 4%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
-}
-
-.img-link {
-	/*display:inline-block;*/
-	width: 40%;
-	/*padding: 10%;*/
+	width: 100%;
 }
 
 .nav {
@@ -32,20 +28,9 @@
 
 .nav li {
 	display: inline-block;
-	padding: 5%;
+	padding: 8%;
 }
 
-body {
-	background-color: black;
-	margin: 0%;
-}
-
-h1 {
-	color: #313536;
-	font-size: 320%;
-}
-
-p {
-	color: #313536;
-	font-size: 120%;
+@media only screen and (min-width: 720px) {
+	background: url("./assets/img/fondo-redes.jpg") center center no-repeat fixed cover;
 }
