@@ -1,33 +1,165 @@
-body {
-  background-color: black;
-  background: url("../assets/images/fondo-baja.jpg") no-repeat fixed center;
-  background-size: cover;
-  margin: 0%;
+html{
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
 }
 
-.img-header {
-  display: block;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+body{
+  padding: 1%;
+  margin: 1%;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.5rem;
+  color: rgb(34, 34, 34);
+  background-color: rgb(250, 250, 250);
 }
 
-.nav {
-  list-style-type: none;
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  color: rgb(34, 34, 34);
+}
+
+h1{
+  float: left;
+  margin-left: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0em;
+  color: rgb(34, 34, 34);
+}
+
+header{
+  padding: 1rem;
+  border: solid 1px black;
+  height: auto;
+  color: rgb(34, 34, 34);
+  -moz-transition: height 1s 0.4s linear;
+}
+
+header a{
+  text-decoration: none;
+}
+
+nav{
+  border: dashed 1px black;
+  box-sizing: border-box;
+  display: inline-block;
   text-align: center;
+  width: 100%;
+
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  -moz-transition: height 4s 0ms, opacity 0.4s 0.4s;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+}
+
+nav ul{
   margin: 0;
   padding: 0;
 }
 
-.nav li {
-  display: inline-block;
-  padding: 8%;
+nav li {
+  border: solid 1px black;
+  display: block;
+  position: relative;
+  list-style-type: none;
+  padding: 1em 0;
 }
 
-@media only screen and (min-width: 720px) {
+/*
+button.toggle{
+  width: 28px;
+  height: 28px;
+  float: right;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  background-color: none;
+  border: 1px solid black;
+  outline: 0;
+  padding: 0;
+}
+
+button.toggle:hover + nav.show{
+  overflow: auto;
+  height: auto;
+  opacity: 1;
+
+  border: dashed 1px black;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}*/
+
+#btnControl {
+  display: none;
+  float: right;
+}
+
+/*
+ #btnControl:checked{
+  height: 20em;
+  -moz-transition: height 5s 0s;
+}*/
+
+#btnControl:checked + label + nav.show {
+  overflow: auto;
+  height: auto;
+  opacity: 1;
+  -moz-transition: height 0s 0s, opacity 0.6s 0s;
+
+  border: dashed 1px black;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn{
+  border: dashed 1px black;
+  padding: 0.5em;
+  margin-top: 1.5em;
+  float: right;
+  display: block;
+  width: 10%;
+  text-align: center;
+  background-color: none;
+}
+
+section{
+  border: solid 1px black;
+  padding: 2rem;
+}
+
+section img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer{
+  border: solid 1px black;
+  padding: 1rem;
+  padding-left: 2em;
+}
+
+
+@media screen and (min-width:500px){
   body{
-    background: url("../assets/images/fondo-redes.jpg") no-repeat fixed center;
-    background-size: cover;
+    background-color:#F6C8CA;
+    color: black;
   }
 }
+
+@media screen and (min-width:870px){
+  body{background-color:#67D2DF;}
+}
+
+@media screen and (min-width:1000px){
+  body{background-color:#C5E86C;}
+}
+
