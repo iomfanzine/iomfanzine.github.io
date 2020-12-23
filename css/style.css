@@ -147,6 +147,19 @@ footer{
   padding-left: 2em;
 }
 
+ul.favicons{
+  padding: none;
+  margin-left: -3.6em;
+}
+
+ul.favicons > li{
+  text-decoration: none;
+  list-style: none;
+  position: inherit;
+  padding: 0.4em;
+  font-size: 3em;
+  display: inline;
+}
 
 @media screen and (min-width:500px){
   body{
@@ -162,4 +175,3 @@ footer{
 @media screen and (min-width:1000px){
   body{background-color:#C5E86C;}
 }
-
