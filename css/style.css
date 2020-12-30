@@ -3,19 +3,40 @@ html{
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: 'atlas-grotesk-web-bold';
+  src: url(../fonts/atlas-grotesk-web-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'atlas-typewriter-medium';
+  src: url(../fonts/atlas-typewriter-medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular';
+  src: url(../fonts/graphik-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular-italic';
+  src: url(../fonts/graphik-regular-italic.otf) format('opentype');
+}
+
 body{
   padding: 1%;
   margin: 1%;
-  font-family: "Helvetica Neue", sans-serif;
-  line-height: 1.5rem;
-  color: rgb(34, 34, 34);
-  background-color: rgb(250, 250, 250);
+  font-family: "graphik-regular-italic", "Helvetica Neue", sans-serif;
+  line-height: 1.6rem;
+  color: #F0F0F0;
+  background-color: #E34E4C;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "graphik-regular", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   padding-bottom: 1em;
-  color: rgb(34, 34, 34);
+  color: #FAFAFA;
 }
 
 h1{
@@ -23,14 +44,27 @@ h1{
   margin-left: 0.5em;
   padding-top: 0.4em;
   padding-bottom: 0em;
-  color: rgb(34, 34, 34);
+  color: #FAFAFA;
+}
+
+article > h1{
+  font-size: 1.6em;
+  margin-left: 0em;
+  display: block;
+  float: none;
+}
+
+article > p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 header{
+  font-family: "graphik-regular", "Helvetica Neue", sans-serif;
   padding: 1rem;
   border: solid 1px black;
   height: auto;
-  color: rgb(34, 34, 34);
+  color: #FAFAFA;
   -moz-transition: height 1s 0.4s linear;
 }
 
@@ -53,7 +87,7 @@ nav{
 
 nav a{
   text-decoration: none;
-  color: rgb(34, 34, 34);
+  color: #FAFAFA;
   text-transform: uppercase;
 }
 
@@ -141,6 +175,16 @@ section img{
   margin: 0 auto;
 }
 
+article{
+  border: solid 1px black;
+  padding: 2rem;
+}
+
+article img{
+  width: 100%;
+  margin: 0 auto;
+}
+
 footer{
   border: solid 1px black;
   padding: 1rem;
@@ -161,10 +205,13 @@ ul.favicons > li{
   display: inline;
 }
 
+.fab{
+  color: #FAFAFA;
+}
+
 @media screen and (min-width:500px){
   body{
-    background-color:#F6C8CA;
-    color: black;
+    background-color:#E34E4C;
   }
 }
 
