@@ -14,6 +14,11 @@ html{
 }
 
 @font-face {
+  font-family: 'atlas-typewriter-light';
+  src: url(../fonts/atlas-typewriter-light.otf) format('opentype');
+}
+
+@font-face {
   font-family: 'graphik-regular';
   src: url(../fonts/graphik-regular.otf) format('opentype');
 }
@@ -21,6 +26,11 @@ html{
 @font-face {
   font-family: 'graphik-regular-italic';
   src: url(../fonts/graphik-regular-italic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-light-italic';
+  src: url(../fonts/graphik-light-italic.otf) format('opentype');
 }
 
 body{
@@ -204,6 +214,16 @@ article img{
   margin: 0 auto;
 }
 
+.artist-info{
+  font-family: "atlas-typewriter-medium", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+.iom-note{
+  font-family: "atlas-typewriter-light", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
 p a{
   color: #FAFAFA;
 }
@@ -228,15 +248,16 @@ ul.favicons{
 
 ul.favicons > li{
   text-decoration: none;
+  padding: 0.8rem;
   list-style: none;
-  font-size: 3em;
+  font-size: 2em;
   display: inline;
 }
 
-ul.favicons > li:nth-child(2){
+/*ul.favicons > li:nth-child(2){
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
+}*/
 
 .fab{
   color: #FAFAFA;
@@ -269,6 +290,8 @@ ul.favicons > li:nth-child(2){
     /*background-color:gray;*/
     font-size: 1.6rem;
     line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   header img{
@@ -303,17 +326,11 @@ ul.favicons > li:nth-child(2){
     margin: 0 auto;
   }
 
-  ul.favicons{
-    /*padding: none;*/
-    /*margin-left: -3.6em;*/
-  }
-
   ul.favicons > li{
     text-decoration: none;
     list-style: none;
-    /*position: inherit;*/
-    padding: 2rem;
-    font-size: 3em;
+    padding: 1.2rem;
+    font-size: 2.2em;
     display: inline;
   }
 }
