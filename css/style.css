@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "graphik-regular", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   padding-bottom: 1em;
+  line-height: 1.2em;
   color: #FAFAFA;
 }
 
@@ -57,7 +58,7 @@ article > h1{
 }
 
 article > p {
-  padding-top: 0.5em;
+  padding-top: 0em;
   padding-bottom: 0.5em;
 }
 
@@ -187,24 +188,38 @@ article img{
   margin: 0 auto;
 }
 
+p a{
+  color: #FAFAFA;
+}
+
+section a{
+  color: #FAFAFA;
+}
+
 footer{
-  border: solid 1px black;
-  padding: 1rem;
-  padding-left: 2em;
+  /*border: solid 1px black;*/
+  /*padding-left: 2em;*/
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 ul.favicons{
-  padding: none;
-  margin-left: -3.6em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 ul.favicons > li{
   text-decoration: none;
   list-style: none;
-  position: inherit;
-  padding: 0.4em;
   font-size: 3em;
   display: inline;
+}
+
+ul.favicons > li:nth-child(2){
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .fab{
@@ -214,7 +229,7 @@ ul.favicons > li{
 /****in-between media query****/
 @media screen and (min-width:500px) and (max-width: 768px){
   body{
-    /*background-color:purple;*/
+    background-color:purple;
     font-size: 1.4rem;
     line-height: 2.2rem;
   }
@@ -233,12 +248,17 @@ ul.favicons > li{
 }
 
 /****tablet media query****/
-@media screen and (min-width:668px) and (max-width: 1024px){
+@media screen and (min-width:768px) and (max-width: 1024px){
   body{
-    /*background-color:gray;*/
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    background-color:gray;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
+
+  h1, h2, h3, h4, h5, h6{
+    line-height: 1.2em;
+    padding-bottom: 0.05rem;
+}
 
   section img{
     display: block;
@@ -248,8 +268,31 @@ ul.favicons > li{
 
   article img{
     display: block;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
+  }
+
+  footer{
+    /*border: solid 1px black;*/
+    padding: 1em;
+    /*padding-left: 2em;*/
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  ul.favicons{
+    /*padding: none;*/
+    /*margin-left: -3.6em;*/
+  }
+
+  ul.favicons > li{
+    text-decoration: none;
+    list-style: none;
+    /*position: inherit;*/
+    padding: 2rem;
+    font-size: 3em;
+    display: inline;
   }
 }
 
