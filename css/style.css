@@ -65,6 +65,7 @@ article > p {
 header{
   font-family: "graphik-regular", "Helvetica Neue", sans-serif;
   padding: 1rem;
+  padding-bottom: 0em;
   /*border: solid 1px black;*/
   border-bottom: solid 3px #FAFAFA;
   height: auto;
@@ -74,6 +75,12 @@ header{
 
 header a{
   text-decoration: none;
+}
+
+header img{
+  width: 50%;
+  padding-left: 0em;
+  padding-top: 1em;
 }
 
 nav{
@@ -101,7 +108,7 @@ nav ul{
 }
 
 nav li {
-/*border: solid 1px black;*/
+  border: solid 1px #FAFAFA;
   display: block;
   position: relative;
   list-style-type: none;
@@ -171,7 +178,7 @@ button.toggle:hover + nav.show{
 
 section{
   /*border: solid 1px black;*/
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section img{
@@ -256,6 +263,12 @@ ul.favicons > li:nth-child(2){
     line-height: 2rem;
   }
 
+  header img{
+    width: 40%;
+    padding-left: 0.25em;
+    padding-top: 1em;
+  }
+
   h1, h2, h3, h4, h5, h6{
     line-height: 1.2em;
     padding-bottom: 0.05rem;
@@ -302,18 +315,25 @@ ul.favicons > li:nth-child(2){
   body{
     /*background-color:black;*/
     margin: 4rem;
+    margin-top: 0em;
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
 
-section{
-  margin-left: 8rem;
-  margin-right: 8rem;
+  header img{
+    width: 30%;
+    padding-left: 0.25em;
+    padding-top: 1em;
+  }
+
+  section{
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
-article{
-  margin-left: 8rem;
-  margin-right: 8rem;
+  article{
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
   section img{
