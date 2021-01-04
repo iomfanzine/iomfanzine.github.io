@@ -27,7 +27,9 @@ body{
   padding: 1%;
   margin: 1%;
   font-family: "graphik-regular-italic", "Helvetica Neue", sans-serif;
-  line-height: 1.6rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #F0F0F0;
   background-color: #E34E4C;
 }
@@ -209,16 +211,66 @@ ul.favicons > li{
   color: #FAFAFA;
 }
 
-@media screen and (min-width:500px){
+/****in-between media query****/
+@media screen and (min-width:500px) and (max-width: 768px){
   body{
-    background-color:#E34E4C;
+    /*background-color:purple;*/
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  section img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width:870px){
-  body{background-color:#67D2DF;}
+/****tablet media query****/
+@media screen and (min-width:668px) and (max-width: 1024px){
+  body{
+    /*background-color:gray;*/
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  section img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width:1000px){
-  body{background-color:#C5E86C;}
+/****laptop media query****/
+@media screen and (min-width:1020px){
+  body{
+    /*background-color:black;*/
+    margin: 4%;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  section img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
 }
