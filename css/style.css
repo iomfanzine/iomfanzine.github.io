@@ -1,33 +1,414 @@
-body {
-  background-color: black;
-  background: url("../assets/images/fondo-baja.jpg") no-repeat fixed center;
-  background-size: cover;
-  margin: 0%;
+html{
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
 }
 
-.img-header {
+@font-face {
+  font-family: 'atlas-grotesk-web-bold';
+  src: url(../fonts/atlas-grotesk-web-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'atlas-typewriter-medium';
+  src: url(../fonts/atlas-typewriter-medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'atlas-typewriter-light';
+  src: url(../fonts/atlas-typewriter-light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular';
+  src: url(../fonts/graphik-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular-italic';
+  src: url(../fonts/graphik-regular-italic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-light-italic';
+  src: url(../fonts/graphik-light-italic.otf) format('opentype');
+}
+
+body{
+  padding: 1%;
+  margin: 1%;
+  font-family: "graphik-regular", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #F0F0F0;
+  background-color: #E34E4C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "atlas-grotesk-web-bold", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 0.25em;
+  line-height: 1.2em;
+  color: #FAFAFA;
+}
+
+h1{
+  float: left;
+  margin-left: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0em;
+  color: #FAFAFA;
+}
+
+article > h1{
+  font-size: 1.6em;
+  margin-left: 0em;
   display: block;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  float: none;
 }
 
-.nav {
-  list-style-type: none;
+article > p {
+  padding-top: 0em;
+  padding-bottom: 0.5em;
+}
+
+header{
+  font-family: "atlas-typewriter-medium", "Helvetica Neue", sans-serif;
+  padding: 1rem;
+  padding-bottom: 0em;
+  /*border: solid 1px black;*/
+  border-bottom: solid 3px #FAFAFA;
+  height: auto;
+  color: #FAFAFA;
+  -moz-transition: height 1s 0.4s linear;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header img{
+  width: 50%;
+  padding-left: 0em;
+  padding-top: 1em;
+}
+
+nav{
+  /*border: dashed 1px black;*/
+  box-sizing: border-box;
+  display: inline-block;
   text-align: center;
+  width: 100%;
+
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  -moz-transition: height 4s 0ms, opacity 0.4s 0.4s;
+}
+
+nav a{
+  text-decoration: none;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+
+nav ul{
   margin: 0;
   padding: 0;
 }
 
-.nav li {
-  display: inline-block;
-  padding: 8%;
+nav li {
+  border: solid 1px #FAFAFA;
+  display: block;
+  position: relative;
+  list-style-type: none;
+  padding: 1em 0;
 }
 
-@media only screen and (min-width: 720px) {
+/*
+button.toggle{
+  width: 28px;
+  height: 28px;
+  float: right;
+  cursor: pointer;
+  user-select: none;
+  border: 0;
+  background-color: none;
+  border: 1px solid black;
+  outline: 0;
+  padding: 0;
+}
+
+button.toggle:hover + nav.show{
+  overflow: auto;
+  height: auto;
+  opacity: 1;
+
+  border: dashed 1px black;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}*/
+
+#btnControl {
+  display: none;
+  float: right;
+}
+
+/*
+ #btnControl:checked{
+  height: 20em;
+  -moz-transition: height 5s 0s;
+}*/
+
+#btnControl:checked + label + nav.show {
+  overflow: auto;
+  height: auto;
+  opacity: 1;
+  -moz-transition: height 0s 0s, opacity 0.6s 0s;
+
+  /*border: dashed 1px black;*/
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn{
+  /*border: dashed 1px black;*/
+  padding: 0em;
+  padding-right: 1rem;
+  margin-top: 0.5em;
+  float: right;
+  display: block;
+  width: 10%;
+  text-align: left;
+  background-color: none;
+}
+
+label img{
+  width: 150%;
+}
+
+section{
+  /*border: solid 1px black;*/
+  padding: 1rem;
+}
+
+section img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.textpreview{
+    font-family: "graphik-regular-italic", "Helvetica Neue", sans-serif;
+}
+
+.intro{
+    font-family: "graphik-light-italic", "Helvetica Neue", sans-serif;
+}
+
+article{
+  /*border: solid 1px black;*/
+  padding: 2rem;
+}
+
+article img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.artist-info{
+  font-family: "atlas-typewriter-medium", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+.iom-note{
+  font-family: "atlas-typewriter-light", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+p a{
+  color: #FAFAFA;
+}
+
+section a{
+  color: #FAFAFA;
+}
+
+footer{
+  /*border: solid 1px black;*/
+  /*padding-left: 2em;*/
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+ul.favicons{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul.favicons > li{
+  text-decoration: none;
+  padding: 0.8rem;
+  list-style: none;
+  font-size: 2em;
+  display: inline;
+}
+
+/*ul.favicons > li:nth-child(2){
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}*/
+
+.fab{
+  color: #FAFAFA;
+}
+
+/****in-between media query****/
+@media screen and (min-width:500px) and (max-width: 768px){
   body{
-    background: url("../assets/images/fondo-redes.jpg") no-repeat fixed center;
-    background-size: cover;
+    /*background-color:purple;*/
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .btn{
+    /*border: dashed 1px black;*/
+    padding-right: 1.8rem;
+    margin-top: 0.6em;
+    width: 10%;
+  }
+
+  section img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/****tablet media query****/
+@media screen and (min-width:768px) and (max-width: 1024px){
+  body{
+    /*background-color:gray;*/
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  header img{
+    width: 40%;
+    padding-left: 0.25em;
+    padding-top: 1em;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    line-height: 1.2em;
+    padding-bottom: 0.05rem;
+}
+
+.btn{
+  /*border: dashed 1px black;*/
+  padding-right: 2rem;
+  margin-top: 0.4em;
+  width: 10%;
+}
+
+label img{
+  width: 120%;
+}
+
+  section img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  footer{
+    /*border: solid 1px black;*/
+    padding: 1em;
+    /*padding-left: 2em;*/
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  ul.favicons > li{
+    text-decoration: none;
+    list-style: none;
+    padding: 1.2rem;
+    font-size: 2.2em;
+    display: inline;
+  }
+}
+
+/****laptop media query****/
+@media screen and (min-width:1024px){
+  body{
+    /*background-color:black;*/
+    margin: 4rem;
+    margin-top: 0em;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  header img{
+    width: 30%;
+    padding-left: 0.25em;
+    padding-top: 1em;
+  }
+
+  nav li:hover{
+    background-color: rgba(247, 207, 208, 0.4);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .btn{
+    /*border: dashed 1px black;*/
+    padding-right: 2rem;
+    margin-top: 0.6em;
+    width: 10%;
+  }
+
+  label img{
+    width: 90%;
+  }
+
+  section{
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  article{
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  section img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  article img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
   }
 }
