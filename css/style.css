@@ -68,11 +68,11 @@ body{
   background-color: #E34E4C;
 }
 
-body.comunidad nav li{
+.comunidad nav li{
   border-bottom: solid 1px #E34E4C;
 }
 
-body.comunidad header{
+.comunidad header{
   border-bottom: solid 3px #E34E4C;
 }
 
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FAFAFA;
 }
 
-body.comunidad h1, h2, h3, h4, h5, h6{
+.comunidad h1, h2, h3, h4, h5, h6{
   color: #E34E4C;
 }
 
