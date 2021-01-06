@@ -226,7 +226,13 @@ section a:hover{
 }
 
 section address{
+  font-family: "atlas-typewriter-bold", "Helvetica Neue", sans-serif;
   font-style: normal;
+  text-transform: uppercase;
+}
+
+section address a{
+  text-transform: lowercase;
 }
 
 .textpreview{
