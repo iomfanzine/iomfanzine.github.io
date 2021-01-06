@@ -44,12 +44,27 @@ body{
   background-color: #E34E4C;
 }
 
+<<<<<<< Updated upstream
+=======
+body.comunidad nav li{
+  border-bottom: solid 1px #E34E4C;
+}
+
+body.comunidad header{
+  border-bottom: solid 3px #E34E4C;
+}
+
+>>>>>>> Stashed changes
 h1, h2, h3, h4, h5, h6 {
   font-family: "atlas-grotesk-web-bold", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
   padding-bottom: 0.25em;
   line-height: 1.2em;
   color: #FAFAFA;
+}
+
+body.comunidad h1, h2, h3, h4, h5, h6{
+  color: #E34E4C;
 }
 
 h1{
