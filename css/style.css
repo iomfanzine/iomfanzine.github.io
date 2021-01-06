@@ -328,6 +328,10 @@ ul.favicons > li{
   color: #E34E4C;
 }
 
+.comunidad .fab{
+  color: #E34E4C;
+}
+
 /****in-between media query****/
 @media screen and (min-width:500px) and (max-width: 768px){
   body{
