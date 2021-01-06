@@ -54,7 +54,6 @@ body{
   background-color: #FAFAFA;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "atlas-typewriter-bold", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
@@ -325,7 +324,7 @@ ul.favicons > li{
   border-bottom: solid 3px #E34E4C;
 }
 
-.comunidad h1, h2, h3, h4, h5, h6{
+.comunidad h1, .comunidad h2, .comunidad h3, .comunidad h4, .comunidad h5, .comunidad h6{
   color: #E34E4C;
 }
 
