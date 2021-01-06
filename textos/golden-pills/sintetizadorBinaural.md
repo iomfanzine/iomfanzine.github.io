@@ -16,7 +16,7 @@ Este sintetizador funciona bajo la afinación de A4 a 440 Hz, por lo que todas l
 Por ejemplo, una onda Alfa de 8.1758 Hz es lo mismo que Do -1.
 
 
-## Partes del sintetizador 
+## Partes del sintetizador
 
 <img src="images/golden-pills-sb2.png" alt="patch2" width="300">
 
@@ -33,7 +33,7 @@ escuchará ningún intervalo si los 5 objetos [vslider] están en cero. Cada uno
 
 Debajo de la zona de ganancia, encontramos un slider horizontal con el que se selecciona la nota musical deseada. En su lugar, también podemos utilizar un controlador MIDI.
 
-### Controlador de una cerebral
+### Controlador de onda cerebral
 
 El controlador se encuentra justo arriba del osciloscopio y funciona como un sistema de
 coordenadas, el eje _x_ corresponde a las notas musicales, mientras que el eje _y_ numera las octavas.
