@@ -54,27 +54,6 @@ body{
   background-color: #FAFAFA;
 }
 
-.comunidad{
-  color: #E34E4C;
-  background-color: #FAFAFA;
-}
-
-.comunidad a {
-  color: #E34E4C;
-}
-
-.comunidad ::selection{
-  color: #FAFAFA;
-  background-color: #E34E4C;
-}
-
-.comunidad nav li{
-  border-bottom: solid 1px #E34E4C;
-}
-
-.comunidad header{
-  border-bottom: solid 3px #E34E4C;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "atlas-typewriter-bold", "Helvetica Neue", sans-serif;
@@ -82,10 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0em;
   line-height: 1.2em;
   color: #FAFAFA;
-}
-
-.comunidad h1, h2, h3, h4, h5, h6{
-  color: #E34E4C;
 }
 
 h1{
@@ -326,6 +301,32 @@ ul.favicons > li{
 
 .fab{
   color: #FAFAFA;
+}
+
+.comunidad{
+  color: #E34E4C;
+  background-color: #FAFAFA;
+}
+
+.comunidad a {
+  color: #E34E4C;
+}
+
+.comunidad ::selection{
+  color: #FAFAFA;
+  background-color: #E34E4C;
+}
+
+.comunidad nav li{
+  border-bottom: solid 1px #E34E4C;
+}
+
+.comunidad header{
+  border-bottom: solid 3px #E34E4C;
+}
+
+.comunidad h1, h2, h3, h4, h5, h6{
+  color: #E34E4C;
 }
 
 /****in-between media query****/
