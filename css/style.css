@@ -231,7 +231,7 @@ section a:hover{
 }
 
 section address{
-  font-family: "atlas-typewriter-bold", "Helvetica Neue", sans-serif;
+  font-family: "atlas-typewriter-medium", "Helvetica Neue", sans-serif;
   font-style: normal;
   text-transform: uppercase;
 }
