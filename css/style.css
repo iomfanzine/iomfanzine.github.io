@@ -343,6 +343,11 @@ ul.favicons > li{
   color: #E34E4C;
 }
 
+.comunidad nav a:hover{
+  color: #FAFAFA;
+  background-color: #E34E4C;
+}
+
 /****in-between media query****/
 @media screen and (min-width:500px) and (max-width: 768px){
   body{
@@ -444,11 +449,6 @@ ul.favicons > li{
     width: 30%;
     padding-left: 0.25em;
     padding-top: 1em;
-  }
-
-  body.comunidad nav a:hover{
-    color: #FAFAFA;
-    background-color: #E34E4C;
   }
 
   .btn{
