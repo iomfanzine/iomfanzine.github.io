@@ -331,6 +331,10 @@ ul.favicons > li{
   border-bottom: solid 1px #E34E4C;
 }
 
+.comunidad nav li:last-child{
+  border-bottom: none;
+}
+
 .comunidad header{
   border-bottom: solid 3px #E34E4C;
 }
