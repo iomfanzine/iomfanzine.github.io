@@ -46,6 +46,7 @@ body{
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #FAFAFA;
+  background-color: #E34E4C;
 }
 
 ::selection{
@@ -67,11 +68,6 @@ body{
   background-color: #E34E4C;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> aade6f09140f8a7526e169dc39da66244575dea9
 body.comunidad nav li{
   border-bottom: solid 1px #E34E4C;
 }
@@ -80,7 +76,6 @@ body.comunidad header{
   border-bottom: solid 3px #E34E4C;
 }
 
->>>>>>> Stashed changes
 h1, h2, h3, h4, h5, h6 {
   font-family: "atlas-typewriter-bold", "Helvetica Neue", sans-serif;
   text-transform: uppercase;
