@@ -140,6 +140,11 @@ nav li:last-child {
   border-bottom: none;
 }
 
+nav a:hover{
+  color: #E34E4C;
+  background-color: #FAFAFA;
+}
+
 /*
 button.toggle{
   width: 28px;
@@ -439,11 +444,6 @@ ul.favicons > li{
     width: 30%;
     padding-left: 0.25em;
     padding-top: 1em;
-  }
-
-  nav a:hover{
-    color: #E34E4C;
-    background-color: #FAFAFA;
   }
 
   body.comunidad nav a:hover{
