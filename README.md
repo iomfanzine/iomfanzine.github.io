@@ -1,13 +1,14 @@
 # iomfanzine.github.io
-Web de [iom!] fanzine v1.0
+Web de [iom!] fanzine v2.0
 
-La versión actual contiene ligas a nuestras redes en:
+La versión actual contiene:
 
-*   Github
-*   YouTube
-*   Facebook
+*   Descripción de impresos y acceso a los archivos en Markdown
+*   Vínculos a la Serie ERPD en YouTube
+*   Una sección de Comunidad para autores comprometidos y entusiastas
+*   Ligas a redes sociales
 
-Más elementos serán agregados en el futuro :)
+Continuamos agregando y estilizando elementos :)
 
 ---
 
