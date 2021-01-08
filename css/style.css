@@ -444,6 +444,7 @@ ul.favicons > li{
   body{
     /*background-color:black;*/
     margin: 4rem;
+    margin-left: 1.6em;
     margin-top: 0em;
     font-size: 1.6rem;
     line-height: 2.2rem;
@@ -469,7 +470,7 @@ ul.favicons > li{
     margin-top: 4em;
     width: 70%;
     display: inline-block;
-    margin-left: 25%
+    margin-left: 23%
   }
 
   footer{
