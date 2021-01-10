@@ -62,6 +62,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #FAFAFA;
 }
 
+/*
+Esto puede justificar el texto sin que se vea muy feo, sin embargo hay algunos caso, como por ejemplo la pagina de inicio (en la version movil) donde seria mejor idea desactivarlo
+De todas formas a mi parecer se ve mejor justificado en todas las demas paginas.
+p{
+  text-align: justify;
+  text-justify: auto;
+} */ 
+
 h1{
   float: left;
   margin-left: 0.5em;
