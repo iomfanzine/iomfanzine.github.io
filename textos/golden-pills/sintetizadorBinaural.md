@@ -1,4 +1,4 @@
-**Golden Pills**, productor. Utilizó este patch en su EP [«Anna Is Sad»](https://open.spotify.com/album/6nbHdzYCuSGWby9ioOZAd3?si=B7J2jpa2Sw2ayS6rAwWecg&fbclid=IwAR3qWUfJfWPiVWlVDbCyvExp7Ry4NDSlUU18o3QsZoXi8sLkBDY3BXbD4rE&nd=1). Contáctalo a través de [Instagram](https://www.instagram.com/golden_pills.wav/?igshid=sab6lolk7tbm&fbclid=IwAR1gF9j0Lotrjch8DjHuZ45b6-Ni0nnRKqHyIoFRDnbnzRz85MTTL77bQVE)
+**Golden Pills**, productor. Utilizó este patch en su EP [«Anna Is Sad»](https://open.spotify.com/album/6nbHdzYCuSGWby9ioOZAd3?si=B7J2jpa2Sw2ayS6rAwWecg&fbclid=IwAR3qWUfJfWPiVWlVDbCyvExp7Ry4NDSlUU18o3QsZoXi8sLkBDY3BXbD4rE&nd=1). Contáctalo a través de [Instagram](https://www.instagram.com/golden_pills.wav/?igshid=sab6lolk7tbm&fbclid=IwAR1gF9j0Lotrjch8DjHuZ45b6-Ni0nnRKqHyIoFRDnbnzRz85MTTL77bQVE).
 
 Patches y textos disponibles en el [repositorio de [iom!]](https://github.com/iomfanzine/).
 
@@ -79,6 +79,6 @@ Y por último y no menos importante, el subpatch *set_noise* es el generador de 
 
 ---
 
-**Golden Pills**, productor. Utilizó este patch en su EP [«Anna Is Sad»](https://open.spotify.com/album/6nbHdzYCuSGWby9ioOZAd3?si=B7J2jpa2Sw2ayS6rAwWecg&fbclid=IwAR3qWUfJfWPiVWlVDbCyvExp7Ry4NDSlUU18o3QsZoXi8sLkBDY3BXbD4rE&nd=1). Contáctalo a través de [Instagram](https://www.instagram.com/golden_pills.wav/?igshid=sab6lolk7tbm&fbclid=IwAR1gF9j0Lotrjch8DjHuZ45b6-Ni0nnRKqHyIoFRDnbnzRz85MTTL77bQVE)
+**Golden Pills**, productor. Utilizó este patch en su EP [«Anna Is Sad»](https://open.spotify.com/album/6nbHdzYCuSGWby9ioOZAd3?si=B7J2jpa2Sw2ayS6rAwWecg&fbclid=IwAR3qWUfJfWPiVWlVDbCyvExp7Ry4NDSlUU18o3QsZoXi8sLkBDY3BXbD4rE&nd=1). Contáctalo a través de [Instagram](https://www.instagram.com/golden_pills.wav/?igshid=sab6lolk7tbm&fbclid=IwAR1gF9j0Lotrjch8DjHuZ45b6-Ni0nnRKqHyIoFRDnbnzRz85MTTL77bQVE).
 
 Patches y textos disponibles en el [repositorio de [iom!]](https://github.com/iomfanzine/).
