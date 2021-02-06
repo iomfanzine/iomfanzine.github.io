@@ -62,14 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #FAFAFA;
 }
 
-/*
-Esto puede justificar el texto sin que se vea muy feo, sin embargo hay algunos caso, como por ejemplo la pagina de inicio (en la version movil) donde seria mejor idea desactivarlo
-De todas formas a mi parecer se ve mejor justificado en todas las demas paginas.
-p{
-  text-align: justify;
-  text-justify: auto;
-} */ 
-
 h1{
   float: left;
   margin-left: 0.5em;
@@ -256,6 +248,10 @@ section address a{
     font-family: "graphik-light-italic", "Helvetica Neue", sans-serif;
 }
 
+.intro img{
+  max-width: 880px;
+}
+
 article{
   /*border: solid 1px black;*/
   padding: 2rem;
@@ -264,6 +260,11 @@ article{
 article img{
   width: 100%;
   margin: 0 auto;
+}
+
+article img.addspace{
+  padding-top: 1em;
+  padding-bottom: 1.2em;
 }
 
 article address{
@@ -368,6 +369,11 @@ ul.favicons > li{
     line-height: 2.2rem;
   }
 
+  p{
+    text-align: justify;
+    text-justify: auto;
+  }
+
   .btn{
     /*border: dashed 1px black;*/
     padding-right: 1.8rem;
@@ -396,6 +402,11 @@ ul.favicons > li{
     line-height: 2.2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  p{
+    text-align: justify;
+    text-justify: auto;
   }
 
   header img{
@@ -456,6 +467,11 @@ ul.favicons > li{
     margin-top: 0em;
     font-size: 1.6rem;
     line-height: 2.2rem;
+  }
+
+  p{
+    text-align: justify;
+    text-justify: auto;
   }
 
   header img{
@@ -532,6 +548,10 @@ ul.favicons > li{
     display: block;
     width: 50%;
     margin: 0 auto;
+  }
+
+  article img.vector{
+    width: 80%;
   }
 
   ul.favicons{

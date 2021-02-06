@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>secuenciador modular</title>
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!--remueve error 404 de fontawesome-->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!--let fontawesome-->
+  <script src="https://kit.fontawesome.com/68ff6402c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="comunidad">
+  <header class="open">
+    <a href="../../index.html" alt="iom!-fanzine-inicio" aria-label="inicio">
+      <!-- <h1>iom! fanzine</h1> -->
+      <img src="../../images/iom-horizontal-textura-logo-rosa.png" alt="logo-de-iom-con-textura-de-gis">
+    </a>
+    <!-- <button class="toggle" role="button" title="Menu" value="Menu">
+    </button> -->
+    <input type="checkbox" id="btnControl" />
+    <label class="btn" for="btnControl">
+      <img src="../../images/nav-botón-gis-rosa.png" alt="">
+    </label>
+    <nav class="show">
+      <ul>
+        <li><a href="../../impreso.html">impreso</a></li>
+        <li><a href="../../serie-ERPD.html">serie ERPD</a></li>
+        <li><a href="../../comunidad.html">comunidad</a></li>
+        <li><a href="../../contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <address>
+        <p class="artist-info"><strong>Martín Rivera</strong>, músico y desarrollador. El secuenciador modular ha sido utilizado en las piezas
+          <a href="https://www.youtube.com/watch?v=vkVvR9r8xtE" aria-label="Rhythm-Meditations-Traveling-Phase-YouTube" target="_blank">Traveling Phase</a> y
+          <a href="https://www.youtube.com/watch?v=xqDmytOMzMs" aria-label="Rhythm-Meditations-Topologies-YouTube" target="_blank">Topologies</a>
+          de la serie Rhythm Meditations.
+          <a href="mailto:developer.martinrivera@gmail.com
+      ?subject=Hola%20Mart&#237;n
+       &body=Te%20contacto%20debido%20a...">Envía un correo</a> para contactarlo.
+        </p>
+        <p class="iom-note">
+          Patches y textos disponibles en el <a href="https://github.com/iomfanzine/iomfanzine.github.io/tree/master/textos/martin-rivera" target="_blank">repositorio de [iom!]</a>.
+        </p>
+      </address>
+      <h1>Secuenciador Modular</h1>
+
+      <p>El primer amor no se olvida. Pure Data fue mi primer amor en el mundo de la programación.
+        Aunque han pasado varios años y he podido diversificar mi repertorio como <em>coder</em>
+        aún busco oportunidades para utilizar esta increíble plataforma,
+        a veces con fines didácticos pero también para desarrollar herramientas y hacer música.</p>
+
+      <p>Desde mi perspectiva, Pd me parece ideal para crear proyectos pequeños pero reutilizables
+        y con gran velocidad en cuanto a sus iteraciones.
+        Propuestas grandes que requieren mantenimiento y suelen llegar a usuarios como un paquete terminado
+        son más factibles de trabajar en otras plataformas, siendo el contraejemplo perfecto <a href="https://www.automatonism.com/" target="_blank">Automatism</a>.
+        De aquí la idea de crear una abstracción que pueda existir en diferentes contextos.</p>
+
+      <p>Un pequeño secuenciador llevaba tiempo en mi carpeta de abstracciones, hasta se caló en algunos conciertos,
+        pero sentí la necesidad de llevarlo a un punto en el que otros usuarios pudieran utilizar una versión estable,
+        bien organizada y con suficiente documentación.
+        Entonces nació <em>The Modular Sequencer</em>.</p>
+
+      <img class="vector" src="images/martin-rivera-ms1.png" alt="patch1">
+
+      <p>Esta abstracción, por un lado, permite crear patrones rítmicos sencillos,
+        por otro tiene la versatilidad para lograr sistemas rítmicos complejos que llevan a resultados inesperados.
+        Fundamentalmente es una caja de ritmos MIDI de 8 pasos, entonces, ¿qué tiene de modular?</p>
+
+      <p>La modularidad reside en que, además de mandar mensajes MIDI
+        tenemos diferentes salidas para mandar <em>bangs</em> con pasos individuales del secuenciador
+        o cada vez que en la secuencia hay un paso activo. Esta dinámica permite usar dichos <em>bangs</em> para controlar más secuenciadores modulares,
+        o cualquier otro objeto dentro del patch, creando redes de control que se alteran a sí mismas.</p>
+
+      <p>Iniciar o detener el secuenciador, crear un nuevo patrón aleatoriamente, mandar un mensaje para cambiar el tempo o el número de pasos,
+        cambiar el canal MIDI, todo esto se logra fácilmente desde sus <em>inlets</em> e interfaz gráfica.
+        La comunicación entre los secuenciadores dentro del patch resulta en secuencias generativas,
+        ensambles politémpicos, contrapuntos melódicos o densas texturas rítmicas.</p>
+
+      <img class="vector addspace" src="images/martin-rivera-ms2.gif" alt="patch2">
+
+      <p>Una función interesante es utilizar esta abstracción dentro del objeto [clone].
+        Podemos emplear [clone] cuando diseñamos un sintetizador polifónico o un instrumento de síntesis granular,
+        ya que en resumen, nos permite generar un número arbitrario de instancias de un subpatch y así escalar su funcionalidad.
+        Si utilizamos nuestra abstracción dentro de este objeto podemos generar cuantas secuencias rítmicas queramos.</p>
+
+      <p>Digamos que creamos un nuevo patch de Pd con la funcionalidad deseada,
+        en este caso un objeto [mod_seq] con diferentes objetos [receive] hacia los <em>inlets</em>,
+        por ejemplo un objeto para recibir <em>bangs</em> en el penúltimo [inlet] del secuenciador y generar un patrón aleatorio,
+        uno para iniciar y detener la secuencia, y un objeto [random] que asigne notas aleatoriamente,
+        este puede tener un objeto [loadbang] para asignar una nota cuando inicializamos
+        o un [receive] para seleccionar nuevas notas cada vez que nos dé el capricho.</p>
+
+      <img class="vector" src="images/martin-rivera-ms3.png" alt="patch3">
+
+      <p>Ahora en nuestro patch principal insertamos un objeto [clone].
+        Agregamos como primer argumento el nombre del patch que acabamos de crear sin la extensión <em>.pd</em>
+        Como segundo argumento especificamos el número de réplicas que deseamos.
+        Desde el patch principal podemos utilizar los respectivos objetos [send] para comunicarnos con las instancias
+        y controlar los parámetros de nuestro ejército de clones.</p>
+
+      <img class="vector" src="images/martin-rivera-ms4.png" alt="patch4">
+
+      <p>Existen opciones avanzadas de este objeto, pero aún con simples [send] y [receive] se logran resultados interesantes.
+        Puedes explorar las funciones de este objeto dando click derecho
+        y seleccionando el menú de <em>Ayuda</em> o <em>Help</em> para abrir un patch donde se explican los controles y la función de los <em>inlets</em> y <em>outlets</em>.</p>
+
+      <p>Descarga la abstracción desde <a href="https://patchstorage.com/the-modular-sequencer/" target="_blank">Patchstorage</a>
+        o desde el repositorio en <a href="https://github.com/mrtnRivera/modular-sequencer" target="_blank">Github</a>.
+        ¡Espero te diviertas haciendo música con esta herramienta!</p>
+
+      <address>
+        <p class="artist-info"><strong>Martín Rivera</strong>, músico y desarrollador. El secuenciador modular ha sido utilizado en las piezas
+          <a href="https://www.youtube.com/watch?v=vkVvR9r8xtE" aria-label="Rhythm-Meditations-Traveling-Phase-YouTube" target="_blank">Traveling Phase</a> y
+          <a href="https://www.youtube.com/watch?v=xqDmytOMzMs" aria-label="Rhythm-Meditations-Topologies-YouTube" target="_blank">Topologies</a>
+          de la serie Rhythm Meditations.
+          <a href="mailto:developer.martinrivera@gmail.com
+      ?subject=Hola%20Mart&#237;n
+       &body=Te%20contacto%20debido%20a...">Envía un correo</a> para contactarlo.
+        </p>
+        <p class="iom-note">
+          Patches y textos disponibles en el <a href="https://github.com/iomfanzine/iomfanzine.github.io/tree/master/textos/martin-rivera" target="_blank">repositorio de [iom!]</a>.
+        </p>
+      </address>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+    <ul class="favicons">
+      <li>
+        <a href="https://www.instagram.com/iom.fanzine/" aria-label="Instagram" target="_blank">
+          <i class="fab fa-instagram-square"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/iomfanzine/" aria-label="GitHub" target="_blank">
+          <i class="fab fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" aria-label="YouTube" target="_blank">
+          <i class="fab fa-youtube"></i></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/iom.fanzine/" aria-label="Facebook" target="_blank">
+          <i class="fab fa-facebook"></i></a>
+      </li>
+    </ul>
+    </p>
+  </footer>
+</body>
+
+</html>
