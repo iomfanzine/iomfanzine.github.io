@@ -133,6 +133,19 @@
         </p>
       </address>
     </article>
+
+    <p>
+    <form method="POST" action="https://api.staticman.net/v3/entry/github/iomfanzine/iomfanzine.github.io">
+      <input name="options[redirect]" type="hidden" value="http://www.iomfanzine.com/textos/martin-rivera/secuenciadorModular.html">
+      <!-- e.g. "2016-01-02-this-is-a-post" -->
+      <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+      <label>Nombre<input name="fields[name]" type="text"></label>
+      <label>Correo<input name="fields[email]" type="email"></label>
+      <label>Mensaje<textarea name="fields[message]"></textarea></label>
+
+      <button type="submit">Enviar</button>
+    </form>
+    </p>
   </main>
 
   <footer>
