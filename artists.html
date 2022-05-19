@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bang Bang! - Artistas</title>
+
+  <!-- BOOTSTRAP CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/bang-style.css" rel="stylesheet">
+
+  <!-- REMOVE 404 FOR FONTAWESOME -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/68ff6402c2.js" crossorigin="anonymous"></script>
+
+  <!-- CSV-PARSE -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  <script src="js/csv-parse.js"></script>
+</head>
+
+<body class="dark-custom">
+
+  <!-- HEADER -->
+  <header>
+    <nav class="paper-background-clickable navbar navbar-expand-lg fixed-top navbar-light nav-font">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-font" href="index.html">Bang Bang!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="paper-background-clickable collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="artists.html" aria-label="Artistas">Artistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" aria-label="Horarios">Horarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" aria-label="Créditos">Créditos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SECTION 1: intro -->
+    <section>
+      <div class="blue-background container-fluid">
+        <div class="row justify-content" style="padding-top:3.33rem;">
+          <div class="col-xs-12 px-5 py-5">
+            <h1 class=" select-over-blue">Artistas</h1>
+            <p class="select-over-blue fs-4 col-md-7">Presentamos a los artistas participantes de "Bang Bang!". Asegúrate de checar la sección de horarios para conocer el orden de las presentaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Ponentes -->
+    <section class="artists">
+      <!-- ARTIST0 -->
+      <div class="paper-background-clickable blue container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0">
+            <img class="img-fluid" id="img0">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4" style="max-height:384px;">
+            <h2 style="display:none" id="artist0"></h2>
+            <p id="pa0"></p>
+            <p style="display:none" id="pb0"></p>
+            <p><a class="clickable" target="_blank" id="contact0">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST1 -->
+      <div class="paper-background-clickable blue container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0 order-md-2">
+            <img class="img-fluid" id="img1">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4 order-md-1" style="max-height:384px;">
+            <h2 style="display:none" id="artist1"></h2>
+            <p id="pa1"></p>
+            <p style="display:contents" id="pb1"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact1">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST2 -->
+      <div class="paper-background-clickable pink container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0">
+            <img class="img-fluid" id="img2">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4" style="max-height:384px;">
+            <h2 style="display:none" id="artist2"></h2>
+            <p id="pa2"></p>
+            <p style="display:contents" id="pb2"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact2">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST3 -->
+      <div class="paper-background-clickable blue container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0 order-md-2">
+            <img class="img-fluid" id="img3">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4 order-md-1" style="max-height:384px;">
+            <h2 style="display:none" id="artist3"></h2>
+            <p id="pa3"></p>
+            <p style="display:contents" id="pb3"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact3">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST4 -->
+      <div class="paper-background-clickable pink container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0">
+            <img class="img-fluid" id="img4">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4" style="max-height:384px;">
+            <h2 style="display:none" id="artist4"></h2>
+            <p id="pa4"></p>
+            <p style="display:contents" id="pb4"></p>
+            <p class="pt-3" style="display:none"><a class="clickable" target="_blank" id="contact4">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST5 -->
+      <div class="paper-background-clickable blue container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0 order-md-2">
+            <img class="img-fluid" id="img5">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4 order-md-1" style="max-height:384px;">
+            <h2 style="display:none" id="artist5"></h2>
+            <p id="pa5"></p>
+            <p style="display:contents" id="pb5"></p>
+            <p class="pt-3" style="display:none"><a class="clickable" target="_blank" id="contact5">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST6 -->
+      <div class="paper-background-clickable pink container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0">
+            <img class="img-fluid" id="img6">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4" style="max-height:384px;">
+            <h2 style="display:none" id="artist6"></h2>
+            <p id="pa6"></p>
+            <p style="display:contents" id="pb6"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact6">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST7 -->
+      <div class="paper-background-clickable pink container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0 order-md-2">
+            <img class="img-fluid" id="img7">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4 order-md-1" style="max-height:384px;">
+            <h2 style="display:none" id="artist7"></h2>
+            <p id="pa7"></p>
+            <p style="display:contents" id="pb7"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact7">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARTIST8 -->
+      <div class="paper-background-clickable pink container-fluid" style="padding: 0px;">
+        <div class="d-flex flex-column flex-md-row">
+
+          <div class="col-xs-12 col-md-6 mx-0">
+            <img class="img-fluid" id="img8">
+          </div>
+
+          <div class="overflow-auto col-xs-12 col-md-6 fs-5 px-4 py-4" style="max-height:384px;">
+            <h2 style="display:none" id="artist8"></h2>
+            <p id="pa8"></p>
+            <p style="display:contents" id="pb8"></p>
+            <p class="pt-3"><a class="clickable" target="_blank" id="contact8">contacto</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: Contacto -->
+    <section>
+      <div class="paper-background-clickable row justify-content-center">
+        <div class="col-md-12 col-lg-12 mt-4 px-5 py-0 text-center">
+          <h2 class="user-select-all">BANG BANG!</h2>
+          <div class="row justify-content-center py-0">
+            <div class="col-12">
+              <a href="https://github.com/iomfanzine/" aria-label="GitHub" target="_blank">
+                <i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/iom.fanzine/" aria-label="Facebook" target="_blank">
+                <i class="fab fa-facebook iconlg"></i></a>
+              <a href="https://www.instagram.com/iom.fanzine/" aria-label="Instagram" target="_blank">
+                <i class="fab fa-instagram iconlg"></i></a>
+              <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" aria-label="YouTube" target="_blank">
+                <i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <div class="paper-background container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+              <address>
+                <p class="user-select-all">
+                  iom.fanzine@gmail.com
+                </p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+
+</html>

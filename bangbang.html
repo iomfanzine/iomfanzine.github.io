@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bang Bang!</title>
+
+  <!-- BOOTSTRAP CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/bang-style.css" rel="stylesheet">
+
+  <!-- REMOVE 404 FOR FONTAWESOME -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/68ff6402c2.js" crossorigin="anonymous"></script>
+
+  <!-- CSV-PARSE-nurJPG -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  <script src="js/csv-parse-nurJPG.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="paper-background-clickable navbar navbar-expand-lg fixed-top navbar-light nav-font">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-font" href="#">Bang Bang!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="paper-background-clickable collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="artists.html" aria-label="Artistas">Artistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" aria-label="Horarios">Horarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" aria-label="Créditos">Créditos</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100%;">
+      <div class="container-fluid" style="padding: 0px;">
+        <div class="row">
+          <div class="col-xs-12">
+            <a class="navbar-brand logo" href="index.html">
+              <!-- IMAGE -->
+              <img src="images/bang-images/mainbanner.jpg" class="img-fluid" style="width: 100%;" alt="bang-bang-banner">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SECTION 1: Una reunión especial -->
+    <section>
+      <div class="paper-background container-fluid">
+        <div class="row justify-content">
+          <div class="col-xs-12 px-5 py-5">
+            <h1>Una reunión especial</h1>
+            <p class="fs-4 col-md-7">Quisimos reunirnos para compartir conocimientos sobre Pure Data y disfrutar un momento juntos.
+              La cita es el próximo once de Junio en el estudio de animación L2, acá en la Ciudad de México.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Ponentes -->
+    <section>
+      <!-- ARTIST 0-2 -->
+      <div class="paper-background-clickable container-fluid" style="padding: 0px;">
+        <div class="d-flex">
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img0">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img1">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img2">
+          </div>
+        </div>
+      </div>
+      <!-- ARTIST 3-5 -->
+      <div class="paper-background-clickable container-fluid" style="padding: 0px;">
+        <div class="d-flex">
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img3">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img4">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img5">
+          </div>
+        </div>
+      </div>
+      <!-- ARTIST 6-8 -->
+      <div class="paper-background-clickable container-fluid" style="padding: 0px;">
+        <div class="d-flex">
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img6">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img7">
+          </div>
+          <div class="col-4 mx-0">
+            <img class="img-fluid" id="img8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Cómo llegar -->
+    <section>
+      <div class="paper-background container-fluid">
+        <div class="row justify-content">
+          <div class="col-xs-12 px-5 py-5">
+            <h1>Cómo llegar</h1>
+            <p class="fs-4 col-md-10">A sólo un kilómetro del Metro Portales se encuentra L2, caminando te llevará sólo diez minutos. Si prefieres llegar en autobús, la parada Municipio Libre se encuentra a tres minutos sobre Eje Central Lázaro
+              Cárdenas.</p>
+            <p class="fs-4 col-md-10">El estudio no cuenta con estacionamiento, por lo que recomendamos el uso de transporte público.</p>
+            <div class="a-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.011825291998!2d-99.14872560871592!3d19.36812858685677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffb363152d21%3A0x414dee1dd0cff877!2sFilipinas%20417%2C%20Portales%20Nte%2C%20Benito%20Ju%C3%A1rez%2C%2003300%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1651711821700!5m2!1ses-419!2smx"
+                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid "></div>
+    </section>
+
+    <!-- SECTION 4: Contacto -->
+    <section>
+      <div class="paper-background-clickable row justify-content-center">
+        <div class="col-md-12 col-lg-12 mt-4 px-5 py-0 text-center">
+          <h2 class="user-select-all">BANG BANG!</h2>
+          <div class="row justify-content-center py-0">
+            <div class="col-12">
+              <a href="https://github.com/iomfanzine/" aria-label="GitHub" target="_blank">
+                <i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/iom.fanzine/" aria-label="Facebook" target="_blank">
+                <i class="fab fa-facebook iconlg"></i></a>
+              <a href="https://www.instagram.com/iom.fanzine/" aria-label="Instagram" target="_blank">
+                <i class="fab fa-instagram iconlg"></i></a>
+              <a href="https://www.youtube.com/channel/UCuFw1TQVM_aQtOeNV6yOQQw?view_as=subscriber/" aria-label="YouTube" target="_blank">
+                <i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <div class="paper-background container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-12">
+              <address>
+                <p class="user-select-all">
+                  iom.fanzine@gmail.com
+                </p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+
+</html>

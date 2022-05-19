@@ -1,0 +1,188 @@
+/*
+COLORS
+White = #F5F0ED
+Beige = #FAF5F0
+Blue = #0F14DA
+Pink = #FE4AB1
+Black = #212529
+
+*/
+
+
+html{
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Knockout-HTF33-JuniorHeviwt';
+  src: url(../fonts/Knockout-HTF33-JuniorHeviwt.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular';
+  src: url(../fonts/graphik-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-regular-italic';
+  src: url(../fonts/graphik-regular-italic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'graphik-light-italic';
+  src: url(../fonts/graphik-light-italic.otf) format('opentype');
+}
+
+body{
+  font-family: "Knockout-HTF33-JuniorHeviwt", "Helvetica Neue", sans-serif;
+}
+
+::selection{
+  color: #F5F0ED;
+  background-color: #0F14DA;
+}
+
+section.artists{
+  font-family: "graphik-regular", "Helvetica Neue", sans-serif;
+}
+
+section.artists .paper-background-clickable.pink{
+  color: #FE4AB1;
+}
+
+section.artists .paper-background-clickable.pink a.clickable{
+  color: #FE4AB1;
+}
+
+.pink ::selection{
+  color: #F5F0ED;
+  background-color: #FE4AB1;
+}
+
+section.artists .paper-background-clickable.blue{
+  color: #0F14DA;
+}
+
+section.artists .paper-background-clickable.blue a.clickable{
+  color: #0F14DA;
+}
+
+h2 {
+  padding-bottom: 0.666rem;
+}
+
+.no-margin-left{
+  margin:0;
+}
+
+.header-row {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.carousel-caption{
+  text-transform: uppercase;
+  background-color: #0F14DA;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+
+.fab{
+  padding: 1.4rem;
+  font-size: 2.4em;
+  color: black;
+}
+
+.paper-background{
+  background-size: cover;
+  background-color: #FAF5F0;
+  background-image: url('../images/bang-images/FONDO.jpg');
+  pointer-events: none;
+}
+
+.paper-background-clickable{
+  background-size: cover;
+  background-color: #FAF5F0;
+  background-image: url('../images/bang-images/FONDO.jpg');
+}
+
+.blue-background{
+  background-size: cover;
+  background-color: #FAF5F0;
+  background-image: url('../images/bang-images/FONDO2.jpg');
+  pointer-events: none;
+  color: #F5F0ED;
+}
+
+.blue-background-clickable{
+  background-size: cover;
+  background-color: #FAF5F0;
+  background-image: url('../images/bang-images/FONDO2.jpg');
+  color: #F5F0ED;
+}
+
+.select-over-blue::selection{
+  color: #0F14DA;
+  background-color: #FAF5F0;
+}
+
+a.clickable{
+  pointer-events: all;
+}
+
+a.clickable:hover{
+  color: #F5F0ED;
+  background-color: #0F14DA;
+}
+
+a.clickable-over-blue{
+  pointer-events: all;
+  color: red;
+}
+
+a.clickable-over-blue:hover{
+  color: #0F14DA;
+  background-color: #FAF5F0
+}
+
+.pink a.clickable:hover{
+  color: #F5F0ED !important;
+  background-color: #FE4AB1;
+}
+
+.blue a.clickable:hover{
+  color: #F5F0ED !important;
+  background-color: #0F14DA;
+}
+
+.a-map{
+  overflow:hidden;
+  padding-top: 33.33%;
+  padding-bottom:56.25%;
+  position:relative;
+  pointer-events: all;
+}
+
+.a-map iframe{
+  left:0;
+  top:20px;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+@media screen and (min-width:768px){
+  #fixedcarousel{
+    width: 40rem;
+  }
+
+  .fab{
+    padding: 2rem;
+    font-size: 2.6em;
+  }
+}
