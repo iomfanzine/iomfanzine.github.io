@@ -14,7 +14,7 @@ Papa.parse(file, {
       var e = document.getElementById('img' + i);
       e.src = './images/bang-images/' + data;
       e.alt = data;
-      //console.log(results.data[i].image);
+      console.log(results.data[i].image);
     }
   }
 });
