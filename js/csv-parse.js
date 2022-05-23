@@ -44,7 +44,7 @@ Papa.parse(file, {
     for (var i = 0; i < results.data.length; i++) {
       data = results.data[i].image;
       var e = document.getElementById('img' + i);
-      e.src = './images/' + data;
+      e.src = './images/bang-images/' + data;
       e.alt = data;
       //console.log(results.data[i].image);
     }
