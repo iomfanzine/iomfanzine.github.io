@@ -180,8 +180,12 @@ section{
 
 section span {
   position: absolute;
-  top: -100px;
+  top: -50px;
 }
+
+/*#span-artist8{
+  clear: both;
+}*/
 
 @media screen and (min-width:768px){
   #fixedcarousel{
