@@ -174,6 +174,15 @@ a.clickable-over-blue:hover{
   position:absolute;
 }
 
+section{
+  position: relative;
+}
+
+section span {
+  position: absolute;
+  top: -100px;
+}
+
 @media screen and (min-width:768px){
   #fixedcarousel{
     width: 40rem;
