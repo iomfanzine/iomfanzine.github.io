@@ -180,7 +180,12 @@ section{
 
 section span {
   position: absolute;
-  top: -50px;
+  top: -90px;
+}
+
+span.anchor {
+  position: relative;
+  top: 0px;
 }
 
 /*#span-artist8{
