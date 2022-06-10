@@ -140,7 +140,7 @@ a.clickable:hover{
 
 a.clickable-over-blue{
   pointer-events: all;
-  color: red;
+  color: #F5F0ED;
 }
 
 a.clickable-over-blue:hover{
